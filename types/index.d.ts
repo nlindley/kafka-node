@@ -140,7 +140,7 @@ export class ProducerStream extends Writable {
 
   close (cb?: () => any): void;
 
-  _write (message: ProduceRequest, encoding: 'buffer' | 'utf8', cb: (error: any, data: any) => any): void;
+  _write (message: ProduceRequest, encoding: BufferEncoding, cb: (error: any, data: any) => any): void;
 
   _writev (chunks: Chunk[], cb: (error: any, data: any) => any): void;
 }
